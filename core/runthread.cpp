@@ -33,6 +33,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <sys/syscall.h>
 #include <sys/types.h>
 #include <sys/resource.h>
+#include <unistd.h>
 
 #define GECKO_PROFILE_RUN
 

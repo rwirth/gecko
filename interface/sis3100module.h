@@ -23,6 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#include <sis1100_var.h>
 #include "../sis3100_calls/sis3100_vme_calls.h"  // Contains all function definitions to use the driver
 #include <fcntl.h>              // Contains open and close
+#include <unistd.h>
 
 #include "baseinterface.h"
 #include "sis3100ui.h"
@@ -65,7 +66,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 class QSettings;
 
-class Sis3100Module : public BaseInterface
+class Sis3100Module : public virtual BaseInterface
 {
     Q_OBJECT
 
